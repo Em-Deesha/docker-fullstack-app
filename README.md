@@ -1,6 +1,6 @@
-# Docker Full-Stack Application
+# 🐳 Docker Full-Stack Application
 
-A simple full-stack application with React frontend and Node.js backend, containerized with Docker and orchestrated with Docker Compose.
+A complete full-stack application with React frontend and Node.js backend, containerized with Docker and orchestrated with Docker Compose.
 
 ## 🏗️ Architecture
 
@@ -8,6 +8,7 @@ A simple full-stack application with React frontend and Node.js backend, contain
 - **Backend**: Node.js/Express API server
 - **Containerization**: Docker with multi-stage builds
 - **Orchestration**: Docker Compose
+- **Repository**: [https://github.com/Em-Deesha/docker-fullstack-app](https://github.com/Em-Deesha/docker-fullstack-app)
 
 ## 🚀 Quick Start
 
@@ -130,13 +131,33 @@ Both services include health checks:
 - Backend: `GET /health`
 - Frontend: Nginx health check
 
-## 📸 Screenshots
+## 📸 Application Status
 
-See the screenshots below showing the application running with Docker Compose:
+The application has been successfully tested and is running with Docker Compose:
 
-![Docker Compose Running](screenshots/docker-compose-running.png)
-![Application Frontend](screenshots/frontend-application.png)
-![Backend API](screenshots/backend-api.png)
+```
+=== Docker Compose Status ===
+NAME              IMAGE             COMMAND                  SERVICE    CREATED              STATUS                             PORTS
+docker-backend    docker-backend    "docker-entrypoint.s…"   backend    About a minute ago   Up 50 seconds (healthy)            0.0.0.0:5000->5000/tcp, [::]:5000->5000/tcp
+docker-frontend   docker-frontend   "/docker-entrypoint.…"   frontend   22 seconds ago       Up 21 seconds (health: starting)   0.0.0.0:3000->80/tcp, [::]:3000->80/tcp
+
+=== Backend API Test ===
+[{"id":1,"name":"John Doe","email":"john@example.com"},{"id":2,"name":"Jane Smith","email":"jane@example.com"},{"id":3,"name":"Bob Johnson","email":"bob@example.com"}]
+
+=== Frontend Test ===
+HTTP/1.1 200 OK
+Server: nginx/1.29.2
+Date: Sat, 18 Oct 2025 07:21:27 GMT
+Content-Type: text/html
+Content-Length: 516
+Last-Modified: Sat, 18 Oct 2025 07:16:31 GMT
+Connection: keep-alive
+ETag: "68f33ecf-204"
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Accept-Ranges: bytes
+```
 
 ## 🚀 Features
 

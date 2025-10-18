@@ -32,7 +32,7 @@ docker-compose up --build
 
 3. Access the application:
 - Frontend: http://localhost:3000
-- Backend API: http://localhost:5000
+- Backend API: http://localhost:5001
 
 ### API Endpoints
 
@@ -121,7 +121,7 @@ docker/
 
 ### Environment Variables
 
-- `REACT_APP_API_URL`: Backend API URL (default: http://localhost:5000)
+- `REACT_APP_API_URL`: Backend API URL (default: http://localhost:5001)
 - `NODE_ENV`: Node environment (production)
 - `PORT`: Backend port (5000)
 
@@ -170,6 +170,13 @@ Accept-Ranges: bytes
 - ✅ Nginx for frontend serving
 - ✅ CORS enabled for API
 - ✅ Responsive design
+
+## 🔗 Access URLs
+
+- **Frontend**: http://localhost:3000
+- **Backend API**: http://localhost:5001
+- **Backend Health**: http://localhost:5001/health
+- **API Users**: http://localhost:5001/api/users
 
 ## 📝 License
 

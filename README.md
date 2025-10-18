@@ -1,12 +1,12 @@
 # 🐳 Docker Full-Stack Application
 
-A complete full-stack application with React frontend and Node.js backend, containerized with Docker and orchestrated with Docker Compose.
+A complete full-stack application with modern HTML/CSS/JavaScript frontend and Node.js backend, containerized with Docker and orchestrated with Docker Compose.
 
 ## 🏗️ Architecture
 
-- **Frontend**: React application served with Nginx
+- **Frontend**: Modern HTML/CSS/JavaScript application served with Nginx
 - **Backend**: Node.js/Express API server
-- **Containerization**: Docker with multi-stage builds
+- **Containerization**: Docker with optimized builds
 - **Orchestration**: Docker Compose
 - **Repository**: [https://github.com/Em-Deesha/docker-fullstack-app](https://github.com/Em-Deesha/docker-fullstack-app)
 
@@ -54,10 +54,11 @@ npm start
 
 ### Frontend Development
 
+The frontend is a simple HTML/CSS/JavaScript application that doesn't require any build process. You can edit the files directly:
+
 ```bash
 cd frontend
-npm install
-npm start
+# Edit index.html, nginx.conf, or Dockerfile as needed
 ```
 
 ## 🐳 Docker Commands
@@ -108,11 +109,8 @@ docker/
 │   └── server.js
 ├── frontend/
 │   ├── Dockerfile
-│   ├── .dockerignore
 │   ├── nginx.conf
-│   ├── package.json
-│   ├── public/
-│   └── src/
+│   └── index.html
 ├── docker-compose.yml
 └── README.md
 ```
@@ -161,7 +159,7 @@ Accept-Ranges: bytes
 
 ## 🚀 Features
 
-- ✅ React frontend with modern UI
+- ✅ Modern HTML/CSS/JavaScript frontend with beautiful UI
 - ✅ Node.js/Express backend API
 - ✅ Docker containerization
 - ✅ Docker Compose orchestration
@@ -170,6 +168,8 @@ Accept-Ranges: bytes
 - ✅ Nginx for frontend serving
 - ✅ CORS enabled for API
 - ✅ Responsive design
+- ✅ No build process required
+- ✅ Fast and reliable
 
 ## 🔗 Access URLs
 
